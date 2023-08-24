@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container-fluid {
+      padding: 20px;
+    }
+    
+    h2 {
+      font-family: 'Lobster', cursive;
+      text-align: center;
+      color: #337ab7;
+      margin-top: 0;
+    }
+    
+    .thick-green-border {
+      border-color: green;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .img-responsive {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .btn {
+      border-radius: 20px;
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    
+    .btn-primary {
+      background-color: #337ab7;
+      border-color: #337ab7;
+      color: white;
+    }
+    
+    .btn-info {
+      background-color: #5bc0de;
+      border-color: #5bc0de;
+      color: white;
+    }
+    
+    .btn-danger {
+      background-color: #d9534f;
+      border-color: #d9534f;
+      color: white;
+    }
+    
+    .text-danger {
+      color: #d9534f;
+    }
+    
+    ul, ol {
+      margin-left: 20px;
+    }
+    
+    form {
+      margin-top: 20px;
+    }
+    
+    label {
+      font-weight: normal;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8">
+        <h2 class="text-primary">CatPhotoApp</h2>
+      </div>
+      <div class="col-xs-4">
+        <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </div>
+    </div>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+    <div class="row">
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+      </div>
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+      </div>
+      <div class="col-xs-4">
+        <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+      </div>
+    </div>
+    <p>Things cats <span class="text-danger">love:</span></p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <form action="https://freecatphotoapp.com/submit-cat-photo">
+      <div class="row">
+        <div class="col-xs-6">
+          <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+        </div>
+        <div class="col-xs-6">
+          <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <label><input type="checkbox" name="personality"> Loving</label>
+        </div>
+        <div class="col-xs-4">
+          <label><input type="checkbox" name="personality"> Lazy</label>
+        </div>
+        <div class="col-xs-4">
+          <label><input type="checkbox" name="personality"> Crazy</label>
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="cat photo URL" required>
+      <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+    </form>
+  </div>
+</body>
+</html>
